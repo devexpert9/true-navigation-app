@@ -1,0 +1,90 @@
+<ion-header mode="md">
+  <ion-toolbar>
+    <ion-buttons
+      ><img src="assets/images/locationpointer.png" />Montreal, QC
+      <ion-icon name="chevron-down"></ion-icon
+    ></ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item heading lines="none" detail="false" class="ion-no-padding">
+    <ion-avatar><img src="assets/images/store1.png" /></ion-avatar>
+    <ion-label>Metro Plus Pointe Claire</ion-label>
+    <ion-buttons routerLink="/products" slot="end">See All</ion-buttons>
+  </ion-item>
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide>
+      <ion-card routerLink="/productdetail">
+        <ion-item lines="none" class="ion-no-padding" detail="false">
+          <img src="assets/images/product1.png" />
+        </ion-item>
+        <ion-card-content>
+          <h2>Borges Extra Virgin Olive Oil</h2>
+          <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card routerLink="/productdetail">
+        <ion-item lines="none" class="ion-no-padding" detail="false">
+          <img src="assets/images/product2.png" />
+        </ion-item>
+        <ion-card-content>
+          <h2>BB Royal Sona Masoori Raw Rice</h2>
+          <p price><span orginal>$125.00</span><span del>$200.00</span></p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card routerLink="/productdetail">
+        <ion-item lines="none" class="ion-no-padding" detail="false">
+          <img src="assets/images/product3.png" />
+        </ion-item>
+        <ion-card-content>
+          <h2>White Bread <br />Flour</h2>
+          <p price><span orginal>$28.00</span><span del>$85.00</span></p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-item mt-30 heading lines="none" detail="false" class="ion-no-padding">
+    <ion-avatar><img src="assets/images/store1.png" /></ion-avatar>
+    <ion-label> Metro Plus Dorion Ste-Catherine</ion-label>
+    <ion-buttons routerLink="/products" slot="end">See All</ion-buttons>
+  </ion-item>
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide>
+      <ion-card routerLink="/productdetail">
+        <ion-item lines="none" class="ion-no-padding" detail="false">
+          <img src="assets/images/product4.png" />
+        </ion-item>
+        <ion-card-content>
+          <h2>Farm Made Free Range Eggs</h2>
+          <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card routerLink="/productdetail">
+        <ion-item lines="none" class="ion-no-padding" detail="false">
+          <img src="assets/images/product5.png" />
+        </ion-item>
+        <ion-card-content>
+          <h2>Dabur Hommade - Ginger Garlic Paste</h2>
+          <p price><span orginal>$125.00</span><span del>$200.00</span></p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card routerLink="/productdetail">
+        <ion-item lines="none" class="ion-no-padding" detail="false">
+          <img src="assets/images/product2.png" />
+        </ion-item>
+        <ion-card-content>
+          <h2>BB Royal Sona Masoori Raw Rice</h2>
+          <p price><span orginal>$125.00</span><span del>$200.00</span></p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

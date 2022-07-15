@@ -1,0 +1,30 @@
+
+ion-tab-bar{
+    border:none;
+    height: 65px;
+    background: var(--ion-color-primary);
+    ion-tab-button{
+        background: var(--ion-color-primary);
+        img{
+            height:19px;
+        }
+        [inactive]
+        {
+           display: inline-block; 
+        }
+        [active]
+        {
+            display: none;
+        }
+        &.tab-selected{
+            [inactive]
+            {
+               display: none; 
+            }
+            [active]
+            {
+                display: inline-block;
+            }
+        }
+    }
+}

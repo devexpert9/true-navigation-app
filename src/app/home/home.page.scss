@@ -1,0 +1,115 @@
+ion-header
+{
+    ion-toolbar{
+        padding: 0px 16px;
+     ion-buttons{
+         cursor: pointer;
+         img{
+             height:20px;
+             margin-right:5px;
+         }
+         ion-icon{
+            margin-left:4px;
+            color:var(--ion-color-primary);
+            font-size: 15px;
+        }
+         font-size: 12px;
+         font-weight: 600;
+     }
+    }
+    &:after{
+        display: none;
+    }
+}
+ion-content{
+    [heading]
+    {
+        --inner-padding-end:0px;
+        margin-bottom: 12px;
+        overflow: visible;
+        ion-avatar{
+            width:45px;
+            height:45px;
+            background: var(--ion-color-white);
+            border-radius:50%;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            margin: 0px;
+            img{
+                width:auto;
+                height: 22px;
+            }
+        }
+        ion-label{
+            font-size: 15px;
+            color: var(--ion-color-black);
+            font-weight: 600;
+            margin: 0px 0px 0px 7px;
+            letter-spacing: -1px;
+            white-space: normal;
+            line-height: normal;
+        }
+        ion-buttons{
+            font-size: 11px;
+            color: var(--ion-color-primary);
+            font-weight: 500;
+            margin-left: 7px;
+            margin-right: 0px;
+        }
+    }
+    ion-slides{
+        margin-right: -16px;
+        ion-slide{
+            ion-card{
+                margin:0px;
+                width: 100%;
+                box-shadow:none;
+                border-radius: 0px;
+                ion-item{
+                    --background: var(--ion-color-grey2);
+                    background: var(--ion-color-grey2);
+                    --inner-padding-end:0px;
+                    height: 165px;
+                    border-radius: 10px;
+                    display: flex;
+                    img{
+                        height: 110px;
+                        margin: auto;
+                        object-fit: contain;
+                    }
+                }
+                ion-card-content{
+                    padding:0px;
+                    h2{    margin-top: 7px;
+                        font-size: 13px;
+                        color:var(--ion-color-black);
+                        font-weight: 500;
+                        text-align: left;
+                    }
+                    [price]
+                    { margin:0;
+                      text-align: left;
+                     span{
+                         &[orginal]
+                         {
+                            color:var(--ion-color-primary);
+                            font-size:14px;
+                            font-weight: bold;
+                         }
+                        &[del]
+                         {   margin-left:3px;
+                             color:var(--ion-color-red);
+                             font-size:10px;
+                             font-weight: 600;
+                             text-decoration: line-through;
+                         }
+                     }
+
+                    }
+                }
+            }
+        }
+    }
+}

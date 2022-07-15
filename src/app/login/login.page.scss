@@ -1,0 +1,111 @@
+[loginhead]
+{ 
+    h3{
+       color:var(--ion-color-primary);
+       font-size:18px;
+       font-weight:600;
+       margin:0;
+       margin-top:20px;
+    }
+    h1{
+        color:var(--ion-color-black);
+        font-size:28px;
+        font-weight:600;
+        margin:0 0 5px;
+    }
+    p{
+        color:var(--ion-color-dark);
+        font-size:13px;
+        font-weight:500;
+        margin:0 0 40px;
+        
+    }
+}
+ion-item{
+    --inner-padding-end:0px;
+    margin-bottom: 20px;
+    ion-label{
+        transform: initial;
+        font-size: 13px;
+        color:var(--ion-color-dark);
+        font-weight:500;
+        margin-bottom: 7px;
+    }
+    ion-input{
+        border:1px solid var( --ion-color-grey);
+        border-radius: 50px;
+        font-size: 13px;
+        color:var(--ion-color-black);
+        font-weight:500;
+        --placeholder-color: #A89F9F;
+        --padding-start: 15px;
+        --padding-end: 15px;
+        --padding-top: 9px;
+        --padding-bottom: 9px;
+
+    }
+    ion-icon{
+        position: absolute;
+        right: 12px;
+        top: 27px;
+        font-size: 15px;
+        color: #ADA4A5;
+        z-index: 9;
+        padding: 0px 5px;
+        margin-left: 0px;
+    }
+}
+[checkbox-forgotpwd]
+{margin-bottom:30px;
+    ion-item{
+        --min-height: auto;
+        ion-label{
+            color:#ADA4A5;
+            font-size: 11px;
+            margin:0;
+            margin-left:10px;
+            font-weight: 500;
+        }
+        margin:0;
+    }
+    ion-checkbox{
+        --border-color: #ADA4A5;
+        --border-width: 1px;
+        width: 16px;
+        height: 16px;
+    }
+    ion-buttons{
+        font-size: 12px;
+        color:var(--ion-color-orange);
+        justify-content: flex-end;
+    }
+}
+ion-button{
+    text-transform: capitalize;
+    --box-shadow: none;
+    --border-width: 1px;
+    font-size: 15px;
+    font-weight: 600;
+    height: 39px;
+    margin-bottom: 35px;
+    &[fill="outline"] {
+        margin-bottom: 0px;
+    }
+}
+ion-footer
+{
+    &:before{
+        display: none;
+    }
+    ion-text{
+        p{
+            font-size: 13px;
+            color:#9D9393;
+            a{
+                text-decoration: none;
+                color:var(--ion-color-primary);
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+<ion-header  mode="md">
+  <ion-toolbar>
+    <ion-back-button slot="start" defaullHref="/products"></ion-back-button>
+    <ion-title>Product Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-slides productslider pager="true" [options]="slideOpts">
+        <ion-slide>
+            <img src="assets/images/productbig.png"/>
+        </ion-slide>
+        <ion-slide>
+            <img src="assets/images/productbig.png"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/images/productbig.png"/>
+         </ion-slide>
+        <ion-slide>
+          <img src="assets/images/productbig.png"/>
+        </ion-slide>
+  </ion-slides>
+  <div productdetail>
+      <ion-text productname>
+        <h4>Food Item</h4>
+        <h2>BB Royal Sona Masoori Raw Rice</h2>
+      </ion-text>
+      <ion-row price class="ion-align-items-center">
+        <ion-col size="6" pl-0>
+          <span orginal>$125.00</span><span del>$200.00</span>
+        </ion-col>
+        <ion-col size="6" pr-0 class="ion-text-end">
+          <span newarrival badge>New Arrival</span>
+        </ion-col>
+     </ion-row>
+      <ion-text keywords>
+        <h3 subheading>Keyword</h3>
+        <span>Food item</span>
+        <span>Kitchen Products</span>
+        <span>Food item</span>
+        <span>Kitchen Products</span>
+        <span>Food item</span>
+      </ion-text>
+      <ion-row promotiondate>
+        <ion-col size="6" pl-0>
+            <h3>Promotion Starts:</h3>
+            <p>12 July 2022</p>
+        </ion-col>
+        <ion-col size="6" pr-0>
+         <h3>Promotion Ends:</h3>
+         <p>12 August 2022</p>
+     </ion-col>
+     </ion-row>
+      <ion-text description>
+        <h3 subheading>Description</h3>
+        <p>In publishing and graphic design, Lorem ipsum is a text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+        <p>Lorem ipsum may be used as a placeholder before final copy is available.</p>
+      </ion-text>
+  </div>
+</ion-content>

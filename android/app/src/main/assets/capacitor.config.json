@@ -1,0 +1,6 @@
+{
+	"appId": "com.truenavigation.app",
+	"appName": "True Navigation",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

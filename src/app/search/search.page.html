@@ -1,0 +1,128 @@
+<ion-header mode="md">
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-searchbar mode="md" searchbar class="ion-no-padding" searchIcon="never" placeholder="Search any product or store..."></ion-searchbar>
+  <ion-segment  mode="md" [(ngModel)]="searchtab">
+    <ion-segment-button value="stores">
+      <ion-label>Stores</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="products">
+      <ion-label>Products</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="searchtab" >
+      <ion-list *ngSwitchCase="'stores'" stores>
+        <p showingresults>Showing 59 results</p>
+          <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/products">
+            <ion-thumbnail>
+              <img src="assets/images/store2.png"/>
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Supermarket</h2>
+                <p>0.5km away</p>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/products">
+            <ion-thumbnail>
+              <img src="assets/images/store3.png"/>
+            </ion-thumbnail>
+            <ion-label>
+                <h2>24 Supermarket</h2>
+                <p>0.7km away</p>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/products">
+            <ion-thumbnail>
+              <img src="assets/images/store4.png"/>
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Super Market</h2>
+                <p>1km away</p>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/products">
+            <ion-thumbnail>
+              <img src="assets/images/store5.png"/>
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Organic market</h2>
+                <p>1.3km away</p>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/products">
+            <ion-thumbnail>
+              <img src="assets/images/store6.png"/>
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Fresh Super Market</h2>
+                <p>2km away</p>
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/products">
+            <ion-thumbnail>
+              <img src="assets/images/store7.png"/>
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Organic Shop</h2>
+                <p>2.3km away</p>
+            </ion-label>
+          </ion-item>  
+      </ion-list>
+      <ion-list *ngSwitchCase="'products'" stores  products>
+        <p showingresults>Showing 59 results</p>
+        <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/productdetail">
+          <ion-thumbnail>
+            <img src="assets/images/product1.png"/>
+          </ion-thumbnail>
+          <ion-label>
+              <h2>Borges Extra Virgin Olive Oil</h2>
+              <p storemarket><img src="assets/images/store22.png"/> Supermarket</p>
+              <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/productdetail">
+          <ion-thumbnail>
+            <img src="assets/images/product2.png"/>
+          </ion-thumbnail>
+          <ion-label>
+              <h2>BB Royal Sona Masoori Raw Rice</h2>
+              <p storemarket><img src="assets/images/store3.png"/>24 Supermarket</p>
+              <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/productdetail">
+          <ion-thumbnail>
+            <img src="assets/images/product4.png"/>
+          </ion-thumbnail>
+          <ion-label>
+              <h2>Farm Made Free Range Eggs</h2>
+              <p storemarket><img src="assets/images/store5.png"/>Supermarket</p>
+              <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/productdetail">
+          <ion-thumbnail>
+            <img src="assets/images/product5.png"/>
+          </ion-thumbnail>
+          <ion-label>
+              <h2>Dabur Hommade - Ginger Garlic Paste</h2>
+              <p storemarket><img src="assets/images/store6.png"/>Fresh Super market</p>
+              <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none" detail="false" class="ion-no-padding" routerLink="/productdetail">
+          <ion-thumbnail>
+            <img src="assets/images/product3.png"/>
+          </ion-thumbnail>
+          <ion-label>
+              <h2>White Bread<br>Flour</h2>
+              <p storemarket><img src="assets/images/store7.png"/>Organic Shop</p>
+              <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+  </div>
+</ion-content>

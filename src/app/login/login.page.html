@@ -1,0 +1,43 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header-->
+<ion-content class="ion-padding">
+    <ion-text loginhead class="ion-text-center">
+            <h3>Hello</h3>
+            <h1>Welcome back!</h1>
+            <p>Enter your details to go inside</p>
+    </ion-text>
+    <ion-item lines="none" class="ion-no-padding" detail="false">
+      <ion-label position="stacked">Email Address</ion-label>
+      <ion-input type="email" placeholder="Enter your email" value="rodgence@yahoo.com"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="ion-no-padding" detail="false">
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input [type]="showPassword ? 'text' : 'password'" placeholder="Enter your password" [(ngModel)]="pwd"></ion-input>
+      <ion-icon end_icon slot="end" [name]="showPassword ? 'eye-outline' : 'eye-off-outline'" (click)="showHide()"></ion-icon>
+    </ion-item>
+    <ion-row checkbox-forgotpwd class="ion-align-items-center">
+      <ion-col class="ion-no-padding" size="6">
+        <ion-item lines="none" class="ion-no-padding"  detail="false">
+          <ion-label>Remember Me</ion-label>
+          <ion-checkbox class="ion-no-margin" slot="start"></ion-checkbox>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6" class="ion-no-padding">
+        <ion-buttons routerLink="/forgotpassword">Recover Password</ion-buttons>
+      </ion-col>
+     </ion-row>
+    <ion-button shape="round" size="full" routerLink="/tabs/home">
+      Login
+    </ion-button>
+    <ion-button shape="round" size="full" fill="outline" routerLink="/tabs/home">
+      Continue As Guest
+    </ion-button>
+</ion-content>
+<ion-footer>
+  <ion-text>
+    <p class="ion-text-center">Don’t have an account? <a routerLink="/signup" href="javascript:void(0)">Sign Up</a></p>
+  </ion-text>
+</ion-footer>

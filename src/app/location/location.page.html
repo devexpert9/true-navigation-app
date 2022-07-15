@@ -1,0 +1,18 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-title>location</ion-title>
+    <ion-buttons (click)="dismiss()">aa</ion-buttons>
+  </ion-toolbar>
+</ion-header-->
+<ion-content class="ion-padding">
+ <ion-card location>
+     <ion-buttons btnclose (click)="dismiss()"><ion-icon name="close-circle"></ion-icon></ion-buttons>
+     <img src="assets/images/location.png"/>
+     <h2>We’d like to show you the best deals nearby</h2>
+     <p>Use your current location to see the deals nearby or enter your postal code.</p>
+     <ion-button shape="round" size="full"  (click)="dismiss()">
+      Use Current Location
+    </ion-button>
+    <ion-buttons btncode>Use Postal Code</ion-buttons>
+ </ion-card>
+</ion-content>

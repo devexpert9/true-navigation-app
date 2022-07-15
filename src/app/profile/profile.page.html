@@ -1,0 +1,24 @@
+<ion-header mode="md">
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+      <ion-card>
+          <img userimg src="assets/images/user.png"/>
+          <label for="editimg"><img src="assets/images/edit.png"/></label>
+          <input type="file" name="editimg" id="editimg" style="display: none;"/>
+      </ion-card>
+      <ion-item lines="none" class="ion-no-padding" routerLink="/profilesettings">
+        <ion-label>Profile Settings</ion-label>
+        <ion-buttons slot="end"><img src="assets/images/arrow.png"/></ion-buttons>
+      </ion-item>
+      <ion-item lines="none" class="ion-no-padding"  routerLink="/changepassword">
+        <ion-label>Change Password</ion-label>
+        <ion-buttons slot="end"><img src="assets/images/arrow.png"/></ion-buttons>
+      </ion-item>
+      <ion-item lines="none" class="ion-no-padding" routerLink="/login">
+        <ion-label>Logout</ion-label>
+        <ion-buttons slot="end"><img src="assets/images/logout.png"/></ion-buttons>
+      </ion-item>
+</ion-content>

@@ -1,0 +1,110 @@
+<ion-header mode="md">
+  <ion-toolbar>
+    <ion-back-button slot="start" defaullHref="/store"></ion-back-button>
+    <ion-title>
+      <ion-item lines="none" detail="false" class="ion-no-padding">
+      <ion-avatar><img src="assets/images/store1.png"/></ion-avatar>
+      <ion-label>Metro Plus Pointe Claire</ion-label>
+      </ion-item>
+    </ion-title>
+    <ion-buttons routerLink="/tabs/search" slot="end"><ion-icon name="search"></ion-icon></ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+<ion-row storeinfo>
+  <ion-col size="8" pl-0>
+      <ion-text address>
+          <h3>Address:</h3>
+          <p>864 Buton Ct Fairbanks, Alska 99172
+            (907)457 -1588</p>
+      </ion-text>
+  </ion-col>
+  <ion-col size="4"  pr-0>
+    <ion-text address>
+        <h3>Work Hours:</h3>
+        <p>9:00 am to 11:00 pm</p>
+    </ion-text>
+</ion-col>
+<ion-col size="12"  pl-0 pr-0>
+  <ion-text address>
+      <h3>Website:</h3>
+      <p>Www.Supermarket.com</p>
+  </ion-text>
+</ion-col>
+</ion-row>
+<h2 heading>Products</h2>
+<ion-row storeproducts>
+  <ion-col size="6">
+      <ion-card routerLink="/productdetail">
+        <span newarrival badge>New Arrival</span>
+        <ion-item lines="none" class="ion-no-padding" detail="false">
+          <img src="assets/images/product1.png"/>
+        </ion-item>
+          <ion-card-content>
+            <h2>Borges Extra Virgin Olive Oil</h2>
+            <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+          </ion-card-content>
+      </ion-card>
+  </ion-col>
+  <ion-col size="6">
+    <ion-card routerLink="/productdetail">
+      <span newarrival badge>New Arrival</span>
+      <ion-item lines="none" class="ion-no-padding" detail="false">
+        <img src="assets/images/product2.png"/>
+      </ion-item>
+        <ion-card-content>
+          <h2>BB Royal Sona Masoori Raw Rice</h2>
+          <p price><span orginal>$125.00</span><span del>$200.00</span></p>
+        </ion-card-content>
+    </ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card routerLink="/productdetail">
+    <span draft badge>Draft</span>
+    <ion-item lines="none" class="ion-no-padding" detail="false">
+      <img src="assets/images/product4.png"/>
+    </ion-item>
+      <ion-card-content>
+        <h2>Farm Made Free Range Eggs</h2>
+        <p price><span orginal>$50.00</span><span del>$85.00</span></p>
+      </ion-card-content>
+  </ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card routerLink="/productdetail">
+    <span newarrival badge>New Arrival</span>
+    <ion-item lines="none" class="ion-no-padding" detail="false">
+      <img src="assets/images/product5.png"/>
+    </ion-item>
+      <ion-card-content>
+        <h2>Dabur Hommade - Ginger Garlic Paste</h2>
+        <p price><span orginal>$125.00</span><span del>$200.00</span></p>
+      </ion-card-content>
+  </ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card routerLink="/productdetail">
+    <span newarrival badge>New Arrival</span>
+    <ion-item lines="none" class="ion-no-padding" detail="false">
+      <img src="assets/images/product3.png"/>
+    </ion-item>
+      <ion-card-content>
+        <h2>White Bread Flour</h2>
+        <p price><span orginal>$105.00</span><span del>$192.00</span></p>
+      </ion-card-content>
+  </ion-card>
+</ion-col>
+<ion-col size="6">
+  <ion-card routerLink="/productdetail">
+    <span newarrival badge>New Arrival</span>
+    <ion-item lines="none" class="ion-no-padding" detail="false">
+      <img src="assets/images/product6.png"/>
+    </ion-item>
+      <ion-card-content>
+        <h2>Dial bar soap spring water</h2>
+        <p price><span orginal>$115.00</span><span del>$185.00</span></p>
+      </ion-card-content>
+  </ion-card>
+</ion-col>
+</ion-row>
+</ion-content>
